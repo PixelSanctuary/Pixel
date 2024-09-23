@@ -15,7 +15,7 @@ export default function Home() {
               Pixel Sanctuary: <br /> Your Gateway to Innovative Gaming
             </h1>
             <p className="text-lg max-w-[580px]">
-              At Pixel Sanctuary, we're building a vibrant community of passionate gamers and creators, where imagination meets cutting-edge technology.
+              At Pixel Sanctuary, we are building a vibrant community of passionate gamers and creators, where imagination meets cutting-edge technology.
             </p>
             <div className="flex flex-wrap gap-5">
               <AnchorButton type="primary" link="/about" text="Join Our Community" />
