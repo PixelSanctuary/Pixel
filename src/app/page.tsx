@@ -1,100 +1,97 @@
 import Image from "next/image";
+import pxHeroBanner from '@/app/assets/pxHeroBanner.jpg';
+import AnchorButton from '@/app/components/AnchorButton';
+import pxColabrativeSpace from '@/app/assets/pxColabrativeSpace.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex">
+      <main className="flex flex-col gap-10 p-16 max-w-screen-2xl mx-auto sm:text-lg">
+        <section className="grid grid-cols-2 gap-5">
+          <div className="flex flex-col gap-5 justify-center">
+            <h1 className="text-4xl font-semibold">
+              Pixel Sanctuary: <br /> Your Gateway to Innovative Gaming
+            </h1>
+            <p className="text-lg max-w-[580px]">
+              At Pixel Sanctuary, we're building a vibrant community of passionate gamers and creators, where imagination meets cutting-edge technology.
+            </p>
+            <div className="flex flex-wrap gap-5">
+              <AnchorButton type="primary" link="/about" text="Join Our Community" />
+              <AnchorButton type="secondary" link="/contact" text="Explore the Realm" />
+            </div>
+          </div>
+          <div className=" flex items-center justify-center">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+            <Image src={pxHeroBanner}
+              alt="Gateway to Innovative Gaming"
+              width={480}
+              height={860} />
+          </div>
+        </section>
+        <section className=" flex flex-col items-center justify-center gap-8">
+          <h2 className="text-4xl font-semibold">Explore the Realm of Endless Possibilities</h2>
+          <div className="grid grid-cols-3 gap-5 text-lg">
+            <div className=" flex flex-col gap-5 items-center text-center p-5 border border-primary rounded">
+              <b className="text-2xl">Diverse Game Genres</b>
+              <p>From thrilling adventures to mind-bending puzzles, our platform offers a vast array of captivating game experiences.</p>
+            </div>
+            <div className=" flex flex-col gap-5 items-center text-center p-5 border border-primary rounded">
+              <b className="text-2xl">Cutting-Edge Technology</b>
+              <p>Immerse yourself in the latest advancements in gaming, including virtual reality and holographic displays.</p>
+            </div>
+            <div className=" flex flex-col gap-5 items-center text-center p-5 border border-primary rounded">
+              <b className="text-2xl">Collaborative Spaces</b>
+              <p>Connect with like-minded individuals and form teams to bring your creative visions to life.</p>
+            </div>
+          </div>
+        </section>
+        <section className="grid grid-cols-2 gap-5 py-10">
+          <div className="flex flex-col gap-5 justify-center">
+            <h1 className="text-4xl font-semibold">
+              Collaborative Spaces: <br/> Fostering Connections
+            </h1>
+            <ul className=" flex flex-col gap-5">
+              <li className="flex items-center gap-2">
+              <FontAwesomeIcon icon={faPlay} /> Shared Co-working Hubs 
+              </li>
+              <li className="flex items-center gap-2">
+              <FontAwesomeIcon icon={faPlay} /> Mentorship Programs
+              </li>
+              <li className="flex items-center gap-2">
+              <FontAwesomeIcon icon={faPlay} /> Community Events
+              </li>
+            </ul>
+          </div>
+          <div className=" flex items-center justify-center">
+
+            <Image src={pxColabrativeSpace}
+              alt="Collaborative Gaming Hubs"
+              width={480}
+              height={860} />
+          </div>
+        </section>
+        <section className=" flex flex-col items-center justify-center gap-8">
+          <h2 className="text-4xl font-semibold">Pixel Playground: Interactive Demos and Challenges</h2>
+          <div className="grid grid-cols-3 gap-5 text-lg font-semibold">
+            <div className=" flex flex-col gap-5 items-center text-center p-5 bg-primary text-black rounded">
+              <b className="text-2xl">Explore</b>
+              <p>Browse our library of interactive demos showcasing the latest gaming innovations.</p>
+            </div>
+            <div className=" flex flex-col gap-5 items-center text-center p-5 bg-primary text-black rounded">
+              <b className="text-2xl">Challenge</b>
+              <p>Put your skills to the test by participating in our engaging game development challenges.</p>
+            </div>
+            <div className=" flex flex-col gap-5 items-center text-center p-5 bg-primary text-black rounded">
+              <b className="text-2xl">Compete</b>
+              <p>Compete against fellow creators and showcase your talent in our game jams and tournaments.</p>
+            </div>
+          </div>
+        </section>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
       </footer>
     </div>
   );
