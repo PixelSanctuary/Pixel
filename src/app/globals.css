@@ -34,3 +34,7 @@ body {
 .antialiased::-webkit-scrollbar{
   display: none;
 }
+
+h1 , h2, h3, p {
+  cursor: default;
+}

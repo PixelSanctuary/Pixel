@@ -13,7 +13,7 @@ export default function AnchorButton({ type = 'primary', link, text }) {
   }
 
   return (
-    <Link href={link} className={`${buttonClass} rounded px-4 py-2 text-lg`}>
+    <Link href={link} className={`${buttonClass} rounded-md px-4 py-2 text-lg`}>
       {text}
     </Link>
   );

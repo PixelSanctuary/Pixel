@@ -6,7 +6,7 @@ import { faSquareGithub, faLinkedin, faSquareInstagram } from '@fortawesome/free
 export default function NavigationBar() {
     return (
         <section className=' border-t border-primary text-primary bg-black'>
-            <div className='flex items-center justify-between w-full mx-auto max-w-screen-2xl p-4 px-16'>
+            <div className='flex items-center justify-between w-full mx-auto max-w-screen-2xl p-4 px-5 sm:px-8 lg:px-16'>
             <div className='flex flex-col'>
             <Link href="/" className={` text-2xl`}>Pixel Sanctuary</Link>
             <span className='text-sm'>Gaming dreams come to life </span>
