@@ -14,7 +14,7 @@ export default function Home() {
             <h1 className="text-4xl font-semibold">
               Pixel Sanctuary: <br /> Your Gateway to Innovative Gaming
             </h1>
-            <p className="text-lg max-w-[580px]">
+            <p className="text-lg max-w-[580px] text-white/80">
               At Pixel Sanctuary, we are building a vibrant community of passionate gamers and creators, where imagination meets cutting-edge technology.
             </p>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-5">
@@ -35,15 +35,15 @@ export default function Home() {
           <div className="grid sm:grid-cols-3 gap-5 text-lg">
             <div className=" flex flex-col gap-5 items-center text-center p-5 border border-primary rounded-md">
               <b className="text-2xl">Diverse Game Genres</b>
-              <p>From thrilling adventures to mind-bending puzzles, our platform offers a vast array of captivating game experiences.</p>
+              <p className="text-white/80">From thrilling adventures to mind-bending puzzles, our platform offers a vast array of captivating game experiences.</p>
             </div>
             <div className=" flex flex-col gap-5 items-center text-center p-5 border border-primary rounded-md">
               <b className="text-2xl">Cutting-Edge Technology</b>
-              <p>Immerse yourself in the latest advancements in gaming, including virtual reality and holographic displays.</p>
+              <p className="text-white/80">Immerse yourself in the latest advancements in gaming, including virtual reality and holographic displays.</p>
             </div>
             <div className=" flex flex-col gap-5 items-center text-center p-5 border border-primary rounded-md">
               <b className="text-2xl">Collaborative Spaces</b>
-              <p>Connect with like-minded individuals and form teams to bring your creative visions to life.</p>
+              <p className="text-white/80">Connect with like-minded individuals and form teams to bring your creative visions to life.</p>
             </div>
           </div>
         </section>
@@ -52,14 +52,14 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl font-semibold">
               Collaborative Spaces: <br/> Fostering Connections
             </h1>
-            <ul className=" flex flex-col gap-5">
-              <li className="flex items-center gap-2">
+            <ul className=" flex flex-col gap-5 text-white/80">
+              <li className="flex items-center gap-2 hover:text-white cursor-pointer">
               <FontAwesomeIcon icon={faPlay} /> Shared Co-working Hubs 
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-white cursor-pointer">
               <FontAwesomeIcon icon={faPlay} /> Mentorship Programs
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 hover:text-white cursor-pointer">
               <FontAwesomeIcon icon={faPlay} /> Community Events
               </li>
             </ul>
@@ -90,13 +90,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex text-xl sm:text-3xl text-center items-center justify-center bg-gradient-to-b from-primary/0 to-primary/30 font-bold py-10 px-4">
-
-      <h2>
-        Level Up with Pixel Sanctuary: Become a Pixeler
-      </h2>
-
-      </footer>
     </div>
   );
 }

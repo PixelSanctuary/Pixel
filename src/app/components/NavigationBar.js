@@ -11,7 +11,7 @@ export default function NavigationBar() {
             <div className='flex gap-5'>
             <Link href="/">Games</Link>
             <Link href="/">Support</Link>
-            <Link href="/">About</Link>
+            <Link href="/about">About</Link>
             </div>
             <FontAwesomeIcon icon={faLayerGroup} className={` text-2xl`} />
         </section>
