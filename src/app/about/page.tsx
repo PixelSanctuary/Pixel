@@ -1,9 +1,19 @@
-
-"use client";
-
 import React from  'react';
 import Image from "next/image";
 import graphLines from '@/app/assets/graphLines.png';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us | Pixel Sanctuary - Game Development & Community',
+  description: 'Learn about Pixel Sanctuary, a vibrant community for gamers and game developers. Discover our mission, values, and passion for creating amazing games.',
+  keywords: 'Pixel Sanctuary, about us, game development, gaming community, indie game studio, game dev, video games',
+  openGraph: {
+    title: 'About Pixel Sanctuary - Game Development & Community',
+    description: 'Find out more about Pixel Sanctuary, a passionate game development studio and community of gamers.',
+    url: 'https://pixelsanctuary.vercel.app/about',
+    type: 'website',
+  },
+};
 
 const About = () => {
   return (

@@ -23,6 +23,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Pixel Sanctuary | Game Dev & Community",
   description: "A vibrant community for gamers and game developers.",
+  keywords: "Pixel Sanctuary, game development, gaming community, indie games, game developers, gamers, gaming, video games, game design, game tools, game technology, online gaming, game tutorials, game resources, multiplayer games, gaming events",
 };
 
 export default function RootLayout({
@@ -33,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col text-white h-screen`}
       >
         <NavigationBar />
         {children}

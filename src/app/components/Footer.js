@@ -5,11 +5,11 @@ import { faSquareGithub, faLinkedin, faSquareInstagram } from '@fortawesome/free
 
 export default function NavigationBar() {
     return (
-        <footer>
+        <footer className='mt-auto'>
             <section className="flex text-xl sm:text-3xl text-center items-center justify-center bg-gradient-to-b from-primary/0 to-primary/30 font-bold py-10 px-4">
 
                 <h2>
-                    Level Up with Pixel Sanctuary: Become a Pixeler
+                    Level Up with Pixel Sanctuary: <br className='block sm:hidden'/> Become a Pixeler
                 </h2>
 
             </section>
