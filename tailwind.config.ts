@@ -13,6 +13,18 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary: "#39ff14"
       },
+      keyframes: {
+        progress: {
+          '0%': { backgroundImage: 'linear-gradient(180deg, rgba(57,255,20,0) 10%, rgba(57,255,20,.30) 100%)' },
+          '25%': { backgroundImage: 'linear-gradient(180deg, rgba(57,255,20,0) 10%,  rgba(57,255,20,.30) 90%)' },
+          '50%': { backgroundImage: 'linear-gradient(180deg, rgba(57,255,20,0) 10%,  rgba(57,255,20,.30) 80%)' },
+          '75%': { backgroundImage: 'linear-gradient(180deg, rgba(57,255,20,0) 10%,  rgba(57,255,20,.30) 70%)' },
+          '100%': { backgroundImage: 'linear-gradient(180deg, rgba(57,255,20,0) 10%,  rgba(57,255,20,.30) 60%)' },
+        },
+      },
+      animation: {
+        'progressBar': 'progress 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

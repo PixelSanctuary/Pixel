@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ProgressBar from '@/app/components/ProgressBar'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -13,8 +13,9 @@ const GameDetail = ({ params }: { params: { id: string } }) => {
   const { id } = params;
 
   return (
-    <div className="game-detail h-full text-center py-20">
-      <h1 className='text-4xl'>{id} is Coming Soon...</h1>
+    <div className="game-detail flex flex-col gap-5 h-full text-center py-20 max-w-screen-2xl mx-auto">
+      <h1 className='text-4xl'>{id} is Under Construction...</h1>
+      <ProgressBar total={90} completed={33} />
     </div>
   );
 };
