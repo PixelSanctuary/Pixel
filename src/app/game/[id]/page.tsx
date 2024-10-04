@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressBar from '@/app/components/ProgressBar'
+import TicTacToe from '@/app/components/games/TickTackToe';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -13,10 +14,14 @@ const GameDetail = ({ params }: { params: { id: string } }) => {
   const { id } = params;
 
   return (
-    <div className="game-detail flex flex-col gap-5 h-full text-center py-20 max-w-screen-2xl mx-auto">
-      <h1 className='text-4xl'>{id} is Under Construction...</h1>
-      <ProgressBar total={90} completed={33} />
-    </div>
+    <section className="game-detail flex flex-col gap-5 h-screen text-center py-20 max-w-screen-2xl mx-auto">
+      { id == 'TicTackToe' ? <TicTacToe/> :
+      <div className='flex flex-col gap-5 '>
+        <h1 className='text-4xl'>{id} is Under Construction...</h1>
+        <ProgressBar total={90} completed={34} />
+      </div>
+      }
+    </section>
   );
 };
 
