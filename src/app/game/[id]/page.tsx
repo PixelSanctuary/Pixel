@@ -18,7 +18,7 @@ const GameDetail = ({ params }: { params: { id: string } }) => {
       { id == 'TicTackToe' ? <TicTacToe/> :
       <div className='flex flex-col gap-5 '>
         <h1 className='text-4xl'>{id} is Under Construction...</h1>
-        <ProgressBar total={90} completed={34} />
+        <ProgressBar total={90} completed={35} />
       </div>
       }
     </section>
