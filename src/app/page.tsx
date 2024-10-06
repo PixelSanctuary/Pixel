@@ -75,19 +75,22 @@ export default function Home() {
         </section>
         <section className=" flex flex-col items-center justify-center gap-8">
           <h2 className="text-3xl sm:text-4xl font-semibold">Pixel Playground: Interactive Demos and Challenges</h2>
-          <div className="grid sm:grid-cols-3 gap-5 text-lg font-semibold">
-            <div className=" flex flex-col gap-5 items-center text-center p-5 bg-primary text-black rounded-md">
-              <b className="text-2xl">Explore</b>
-              <p>Browse our library of interactive demos showcasing the latest gaming innovations.</p>
-            </div>
-            <div className=" flex flex-col gap-5 items-center text-center p-5 bg-primary text-black rounded-md">
-              <b className="text-2xl">Challenge</b>
-              <p>Put your skills to the test by participating in our engaging game development challenges.</p>
-            </div>
-            <div className=" flex flex-col gap-5 items-center text-center p-5 bg-primary text-black rounded-md">
-              <b className="text-2xl">Compete</b>
-              <p>Compete against fellow creators and showcase your talent in our game jams and tournaments.</p>
-            </div>
+          <div className="grid sm:grid-cols-3 gap-5 text-lg text-center font-semibold">
+          <Card
+              heading="Explore"
+              description="Browse our library of interactive demos showcasing the latest gaming innovations."
+              invertStyle={true}
+            />
+             <Card
+              heading="Challenge"
+              description="Put your skills to the test by participating in our engaging game development challenges."
+              invertStyle={true}
+            />
+             <Card
+              heading="Compete"
+              description="Compete against fellow creators and showcase your talent in our game jams and tournaments."
+              invertStyle={true}
+            />
           </div>
         </section>
       </main>

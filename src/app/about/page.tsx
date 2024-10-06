@@ -23,7 +23,7 @@ const About = () => {
               width={1080}
               height={1080} />
       <div className="flex flex-col text-center gap-5 about-content max-w-4xl mx-auto px-5 sm:px-8 lg:px-16 py-10 sm:text-lg">
-        <h1 className="text-4xl font-semibold">About Pixel Sanctuary</h1>
+        <h1 className="text-4xl font-semibold text-primary">About Pixel Sanctuary</h1>
         <p className='text-white/80'>
           Welcome to <strong>Pixel Sanctuary</strong>! We are a passionate team of developers, gamers, and creators
           dedicated to shaping the future of gaming through cutting-edge software development. Whether you are a seasoned 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const Services = () => {
   return (
-    <section className="services-container flex flex-col max-w-screen-2xl mx-auto px-5 sm:px-8 lg:px-16 py-20 w-full h-full text-center relative">
+    <section className="services-container flex flex-col max-w-screen-2xl mx-auto px-5 sm:px-8 lg:px-16 py-20 w-full h-full text-center">
       <h1 className="text-4xl font-bold text-primary">Our Services</h1>
       <p className="mt-4 text-lg text-white/80 max-w-3xl mx-auto">
         At Pixel Sanctuary, we offer a variety of services tailored to game developers, gamers, and gaming communities.
