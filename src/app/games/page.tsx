@@ -23,9 +23,9 @@ const games = [
     description: 'Classic Tic Tack Toe, Play against friends or AI.',
   },
   {
-    id: 'Bingo',
-    title: 'Bingo',
-    description: 'A Game where luck meets strategy.',
+    id: 'NewGame',
+    title: 'New Game',
+    description: 'Concept of the Game is Under Development.',
   },
   {
     id: 'Sudoku',

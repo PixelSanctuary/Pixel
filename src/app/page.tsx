@@ -1,8 +1,8 @@
 import Image from "next/image";
-import pxHeroBanner from '@/app/assets/pxHeroBanner.jpg';
+import pxHeroBanner from '@/app/assets/pxHeroBanner.webp';
 import AnchorButton from '@/app/components/AnchorButton';
 import Card from '@/app/components/Card';
-import pxColabrativeSpace from '@/app/assets/pxColabrativeSpace.jpg';
+import pxColabrativeSpace from '@/app/assets/pxColabrativeSpace.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <main className="flex flex-col gap-10 p-5 sm:p-8 lg:p-16 max-w-screen-2xl mx-auto sm:text-lg">
-        <section className="grid sm:grid-cols-2 gap-5">
+        <section className="grid sm:grid-cols-2 gap-5 pb-5">
           <div className="flex flex-col gap-5 justify-center text-center sm:text-left">
             <h1 className="text-4xl font-semibold">
               Pixel Sanctuary: <br /> Your Gateway to Innovative Gaming
@@ -25,10 +25,10 @@ export default function Home() {
           </div>
           <div className=" flex items-center justify-center">
 
-            <Image src={pxHeroBanner}
+            <Image src={pxHeroBanner} className=" rounded-lg shadow-lg shadow-black"
               alt="Gateway to Innovative Gaming"
-              width={480}
-              height={860} />
+              width={460}
+              height={820} />
           </div>
         </section>
         <section className=" flex flex-col items-center justify-center gap-8">
@@ -67,10 +67,10 @@ export default function Home() {
           </div>
           <div className=" flex items-center justify-center">
 
-            <Image src={pxColabrativeSpace}
+            <Image src={pxColabrativeSpace} className=" rounded-lg shadow-lg shadow-black"
               alt="Collaborative Gaming Hubs"
-              width={480}
-              height={860} />
+              width={460}
+              height={820} />
           </div>
         </section>
         <section className=" flex flex-col items-center justify-center gap-8">

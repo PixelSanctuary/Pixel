@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -7,7 +8,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'; // Import Font Awesome CS
 config.autoAddCss = false;
 
 import NavigationBar from "@/app/components/NavigationBar"
-import Footer from "@/app/components/Footer"
+const Footer = dynamic(() => import('@/app/components/Footer'), { ssr: false });
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

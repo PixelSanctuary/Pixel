@@ -26,7 +26,7 @@ const GameDetail = ({ params }: { params: { id: string } }) => {
         return (
           <div className='flex flex-col gap-5'>
             <h1 className='text-4xl'>{id} is Under Construction...</h1>
-            <ProgressBar total={90} completed={36} />
+            <ProgressBar total={90} completed={37} />
           </div>
         );
     }
