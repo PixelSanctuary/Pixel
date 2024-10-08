@@ -6,14 +6,14 @@ export default function AnchorButton({ type = 'primary', link, text }) {
   let buttonClass = '';
   switch (type) {
     case 'secondary':
-      buttonClass = 'secondary-style text-primary border border-primary'; // Example class for secondary type
+      buttonClass = 'secondary-style text-primary border border-primary shadow-glow hover:shadow-primary '; // Example class for secondary type
       break;
     default:
-      buttonClass = 'primary-style bg-primary text-black font-semibold'; // Example class for primary type
+      buttonClass = 'primary-style bg-primary text-black font-semibold shadow-glow hover:shadow-primary'; // Example class for primary type
   }
 
   return (
-    <Link href={link} className={`${buttonClass} rounded-md px-4 py-2 text-lg`}>
+    <Link href={link} className={`${buttonClass} rounded-md px-4 py-2 text-lg smooth`}>
       {text}
     </Link>
   );

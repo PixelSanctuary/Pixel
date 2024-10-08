@@ -20,7 +20,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-5">
               <AnchorButton type="primary" link="/about" text="Join Our Community" />
-              <AnchorButton type="secondary" link="/contact" text="Explore the Realm" />
+              <AnchorButton type="secondary" link="/games" text="Explore the Realm" />
             </div>
           </div>
           <div className=" flex items-center justify-center">

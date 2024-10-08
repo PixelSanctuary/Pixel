@@ -13,6 +13,9 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary: "#39ff14"
       },
+      boxShadow:{
+        'glow': '0 0px 10px 3px #00010',
+      },
       keyframes: {
         progress: {
           '0%': { backgroundImage: 'linear-gradient(180deg, rgba(57,255,20,0) 10%, rgba(57,255,20,.30) 100%)' },
