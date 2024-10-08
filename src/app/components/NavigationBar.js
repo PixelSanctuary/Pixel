@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlaystation } from '@fortawesome/free-brands-svg-icons';
-import { faLayerGroup, faCircleXmark, faDiamondTurnRight, faBookAtlas } from '@fortawesome/free-solid-svg-icons';
+import { faLayerGroup, faCircleXmark, faBookAtlas } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavigationBar() {
     const [showMenu, setShowMenu] = useState(false);
