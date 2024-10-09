@@ -24,9 +24,14 @@ const config: Config = {
           '75%': { backgroundImage: 'linear-gradient(180deg, rgba(57,255,20,0) 10%,  rgba(57,255,20,.30) 70%)' },
           '100%': { backgroundImage: 'linear-gradient(180deg, rgba(57,255,20,0) 10%,  rgba(57,255,20,.30) 60%)' },
         },
+        fade : {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '100' },
+        }
       },
       animation: {
         'progressBar': 'progress 3s ease-in-out infinite',
+        'fade': 'fade 3s ease-in-out',
       },
     },
   },

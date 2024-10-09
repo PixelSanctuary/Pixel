@@ -6,10 +6,10 @@ export default function AnchorButton({ type = 'primary', link, text }) {
   let buttonClass = '';
   switch (type) {
     case 'secondary':
-      buttonClass = 'secondary-style text-primary border border-primary shadow-glow hover:shadow-primary '; // Example class for secondary type
+      buttonClass = 'secondary-style text-primary border-2 border-primary shadow-glow hover:shadow-primary'; // Example class for secondary type
       break;
     default:
-      buttonClass = 'primary-style bg-primary text-black font-semibold shadow-glow hover:shadow-primary'; // Example class for primary type
+      buttonClass = 'primary-style bg-primary border-2 border-primary text-black font-semibold shadow-glow hover:shadow-primary'; // Example class for primary type
   }
 
   return (

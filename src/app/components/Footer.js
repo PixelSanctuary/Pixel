@@ -14,15 +14,15 @@ export default function NavigationBar() {
 
 
             </section>
-            <section className=' border-t border-primary text-primary bg-black'>
-                <div className='flex items-center justify-between w-full mx-auto max-w-screen-2xl p-4 px-5 sm:px-8 lg:px-16'>
+            <section className=' border-t-2 border-primary text-primary dark:bg-black'>
+                <div className='flex items-center justify-between w-full mx-auto max-w-screen-2xl p-4 px-5 sm:px-8 lg:px-16 font-medium'>
                     <div className='flex flex-col'>
-                        <Link href="/" className="PixelSanctuary text-2xl">Pixel Sanctuary</Link>
+                        <Link href="/" className="PixelSanctuary text-2xl font-semibold">Pixel Sanctuary</Link>
                         <span className='text-sm'>Gaming dreams come to life </span>
                     </div>
                     <div className='flex flex-col items-center '>
                         <p>Our social links</p>
-                        <div className='flex gap-3'>
+                        <div className='flex gap-5'>
                             <Link href="https://github.com/PixelSanctuary/" target='_blank' aria-label="Github" className="text-2xl"><FontAwesomeIcon icon={faSquareGithub} /></Link>
                             <Link href="https://www.linkedin.com/in/pixel-sanctuary/" target='_blank' aria-label="Linkedin" className="text-2xl"><FontAwesomeIcon icon={faLinkedin} /></Link>
                             <Link href="https://www.instagram.com/pixel_sanctuary/" target='_blank' aria-label="Instagram" className="text-2xl"><FontAwesomeIcon icon={faSquareInstagram} /></Link>

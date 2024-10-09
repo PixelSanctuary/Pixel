@@ -38,15 +38,15 @@ const GamesListing = () => {
   return (
     <section className="games-listing flex flex-col max-w-screen-2xl mx-auto px-5 sm:px-8 lg:px-16 py-10 sm:py-20 text-center w-full h-full overflow-auto">
       <h1 className="text-3xl sm:text-4xl font-bold text-primary">Explore and Play Free Online Games at Pixel Sanctuary</h1>
-      <section className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-10 h-full">
+      <section className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10 h-full">
         {games.map((game) => (
           <div
             key={game.id}
-            className="flex flex-col items-center border border-primary bg-black rounded-md px-4 py-8 sm:py-10 cursor-pointer hover:shadow-lg transition-shadow"
+            className="flex flex-col items-center border-2 border-primary dark:bg-black rounded-md px-4 py-8 sm:py-10 cursor-pointer hover:shadow-lg transition-shadow"
           >
             <Link className='flex flex-col sm:gap-5' href={game.externalLink || `/game/${game.id}`}>
-              <h2 className="text-2xl sm:text-3xl font-semibold text-white">{game.title}</h2>
-              <p className="mt-2 sm:text-lg text-white/80 h-full grow">{game.description}</p>
+              <h2 className="text-2xl sm:text-3xl font-semibold dark:text-white">{game.title}</h2>
+              <p className="mt-2 sm:text-lg text-black/80 dark:text-white/80 h-full grow">{game.description}</p>
             </Link>
           </div>
         ))}

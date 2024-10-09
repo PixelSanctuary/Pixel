@@ -15,7 +15,7 @@ export default function Home() {
             <h1 className="text-4xl font-semibold">
               Pixel Sanctuary: <br /> Your Gateway to Innovative Gaming
             </h1>
-            <p className="text-lg max-w-[580px] text-white/80">
+            <p className="text-lg max-w-[580px] text-black/80 dark:text-white/80">
               At Pixel Sanctuary, we are building a vibrant community of passionate gamers and creators, where imagination meets cutting-edge technology.
             </p>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-5">
@@ -33,7 +33,7 @@ export default function Home() {
         </section>
         <section className=" flex flex-col items-center justify-center gap-8">
           <h2 className="text-3xl sm:text-4xl font-semibold">Explore the Realm of Endless Possibilities</h2>
-          <div className="grid sm:grid-cols-3 gap-5 text-lg text-center">
+          <div className="grid sm:grid-cols-3 gap-5 sm:gap-8 text-lg text-center">
             <Card
               heading="Diverse Game Genres"
               description="From thrilling adventures to mind-bending puzzles, our platform offers a vast array of captivating game experiences."
@@ -53,14 +53,14 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl font-semibold">
               Collaborative Spaces: <br /> Fostering Connections
             </h1>
-            <ul className=" flex flex-col gap-5 text-white/80">
-              <li className="flex items-center gap-2 hover:text-white cursor-pointer">
+            <ul className=" flex flex-col gap-5 text-black/80 dark:text-white/80">
+              <li className="flex items-center gap-2 hover:text-black dark:hover:text-white cursor-pointer">
                 <FontAwesomeIcon icon={faPlay} /> Shared Co-working Hubs
               </li>
-              <li className="flex items-center gap-2 hover:text-white cursor-pointer">
+              <li className="flex items-center gap-2 hover:text-black dark:hover:text-white cursor-pointer">
                 <FontAwesomeIcon icon={faPlay} /> Mentorship Programs
               </li>
-              <li className="flex items-center gap-2 hover:text-white cursor-pointer">
+              <li className="flex items-center gap-2 hover:text-black dark:hover:text-white cursor-pointer">
                 <FontAwesomeIcon icon={faPlay} /> Community Events
               </li>
             </ul>
@@ -75,7 +75,7 @@ export default function Home() {
         </section>
         <section className=" flex flex-col items-center justify-center gap-8">
           <h2 className="text-3xl sm:text-4xl font-semibold">Pixel Playground: Interactive Demos and Challenges</h2>
-          <div className="grid sm:grid-cols-3 gap-5 text-lg text-center font-semibold">
+          <div className="grid sm:grid-cols-3 gap-5 sm:gap-8 text-lg text-center font-semibold">
           <Card
               heading="Explore"
               description="Browse our library of interactive demos showcasing the latest gaming innovations."
